@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "https://unsplash.com/photos/W1TOhhlbQpw",
+            "request": "launch",
+            "url": "https://unsplash.com/photos/W1TOhhlbQpw"
+        }
+    ]
+}

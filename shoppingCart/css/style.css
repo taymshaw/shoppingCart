@@ -1,0 +1,21 @@
+body {
+    background-image: url(../background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+.container {
+    background-color: #fff;
+    opacity: 0.8;
+    margin-top: 100px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.row {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+td {
+    padding-bottom: 5px;
+    padding-right: 5px;
+}

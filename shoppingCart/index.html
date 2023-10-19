@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Tay Bakes Order Guide</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="js/application.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="text-center">Order Guide</h1>
+        <div class="row">
+            <div class="col-12">
+                <div class="table table-responsive">
+                    <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Item (item, vendor, amt)</th>
+                            <th scope="col">Price (USD)</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Total Cost (USD)</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="itemName">Flour, HappyWheat Co., 25#</td>
+                            <td class="itemPrice">30.00</td>
+                            <td class="quantity"><input type="number" /></td>
+                            <td class="totalCost"></td>
+                            <td><button class="btn btn-light btn-sm remove">Clear</button></td>
+                        </tr>
+                        <tr>
+                            <td class="itemName">Sugar, Sweet Co., 25#</td>
+                            <td class="itemPrice">24.99</td>
+                            <td class="quantity"><input type="number" /></td>
+                            <td class="totalCost"></td>
+                            <td><button class="btn btn-light btn-sm remove">Clear</button></td>
+                        </tr>
+                        <tr>
+                            <td class="itemName">Eggs, HappyEgg Co., 30 doz.</td>
+                            <td class="itemPrice">59.95</td>
+                            <td class="quantity"><input type="number" /></td>
+                            <td class="totalCost"></td>
+                            <td><button class="btn btn-light btn-sm remove">Clear</button></td>
+                        </tr>
+                        <tr>
+                            <td class="itemName">Semi-Sweet Choc Chips, Sweet Co., 5#</td>
+                            <td class="itemPrice">32.99</td>
+                            <td class="quantity"><input type="number" /></td>
+                            <td class="totalCost"></td>
+                            <td><button class="btn btn-light btn-sm remove">Clear</button></td>
+                        </tr>
+                        <tr>
+                            <td class="itemName">Butter, HappyCow Co., 10#</td>
+                            <td class="itemPrice">20.50</td>
+                            <td class="quantity"><input type="number" /></td>
+                            <td class="totalCost"></td>
+                            <td><button class="btn btn-light btn-sm remove">Clear</button></td>
+                        </tr>
+                        <tr id="addItem">
+                            <td><input class="form-control input-md" type="text" id="newItemInfo" placeholder="New Item Information" /></td>
+                            <td><input class="form-control input-md" type="number" id="newItemPrice" placeholder="Price per Each" /></td>
+                            <td class="quantity"><input type="number" /></td>
+                            <td colspan="1"></td>
+                            <td><button class="btn btn-secondary btn-sm add">Add</button></td>
+                        </tr>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" id="cartCostLabel">Total Order Cost</td>
+                            <td id="finalTotal">0.00</td>
+                        </tr>
+                    </tfoot>
+                </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

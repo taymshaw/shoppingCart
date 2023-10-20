@@ -22,6 +22,7 @@ $(document).ready(function() {
     // remove an item
     $('tbody').on('click', '.btn.remove', function () {
         $(this).closest('tr').remove();
+        updateFinalTotal();
     });
 
         // sub total of each line item
